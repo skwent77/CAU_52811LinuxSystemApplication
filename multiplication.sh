@@ -3,11 +3,11 @@
 i=1
 
 while [ ${i} -le $1 ]; do 
- j=1
- while [ ${j} -le $2 ]; do
-  result=`expr ${i} \* ${j}`
-  printf "${i}*${j}=${result} "
-  j=`expr ${j} \+ 1`
+ t=1
+ while [ ${t} -le $2 ]; do
+  result=`expr ${i} \* ${t}`
+  printf "${i}*${t}=${result} "
+  t=`expr ${t} \+ 1`
  done
  
  printf "\n"
